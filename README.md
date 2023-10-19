@@ -29,7 +29,7 @@ This project utilizes Machine Learning techniques to attempt to increase the acc
 
 <h2><a name="motivation"></a> 💪🏽 Project Motivation </h2>
 
-<h2><a name="data"></a> 📊 The Data </h2>
+<h2 id="data">📊 The Data</h2>
 The data used for this project was downloaded from the cBioPortal for Cancer genomics:
 https://www.cbioportal.org/study/summary?id=msk_met_2021 from the MSK MetTropism (MSK, Cell 2021) study. 
 
