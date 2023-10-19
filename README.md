@@ -1,3 +1,4 @@
+<a name="readme-top"></a>
 <!-- PROJECT LOGO Image: greenbutterfly/iStock/Getty Images Plus-->
 <br />
 <div align="center">
@@ -18,17 +19,17 @@ This project utilizes Machine Learning techniques to attempt to increase the acc
 ## 📖 Table of Contents
   
   <ol>
-    <li><a href="#motivation">Project Motivation</a></li>
-    <li><a href="#data">The Data</a></li>
-    <li><a href="#roadmap">Project Roadmap</a></li>
-    <li><a href="#learnings">Learnings</a></li>
+    <li><a href="motivation">Project Motivation</a></li>
+    <li><a href="data">The Data</a></li>
+    <li><a href="roadmap">Project Roadmap</a></li>
+    <li><a href="learnings">Learnings</a></li>
   </ol>
 </details>
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<h2 name="motivation"> 💪🏽 Project Motivation </h2>
 
-<h2 id="motivation"> 💪🏽 Project Motivation </h2>
-
-<h2 id="data"> 📊 The Data </h2>
+<h2 name="data"> 📊 The Data </h2>
 The data used for this project was downloaded from the cBioPortal for Cancer genomics:
 https://www.cbioportal.org/study/summary?id=msk_met_2021 from the MSK MetTropism (MSK, Cell 2021) study. 
 
@@ -46,12 +47,14 @@ Including:
 - Tumor Purity
 - Fractional Genome Altered
 - Primary cancer type
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<h2 id="roadmap"> 🚙 Project Roadmap </h2>
+<h2 name="roadmap"> 🚙 Project Roadmap </h2>
 <img src="Images/roadmap.png" width="1000" height="600">
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<h2 id="learnings"> 💡 Learnings </h2>
-
+<h2 name="learnings"> 💡 Learnings </h2>
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
