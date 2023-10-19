@@ -27,9 +27,9 @@ This project utilizes Machine Learning techniques to attempt to increase the acc
 </details>
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<h2 name="motivation"> 💪🏽 Project Motivation </h2>
+<h2><a name="motivation"></a> 💪🏽 Project Motivation </h2>
 
-<h2 name="data"> 📊 The Data </h2>
+<h2><a name="data"></a> 📊 The Data </h2>
 The data used for this project was downloaded from the cBioPortal for Cancer genomics:
 https://www.cbioportal.org/study/summary?id=msk_met_2021 from the MSK MetTropism (MSK, Cell 2021) study. 
 
@@ -49,11 +49,11 @@ Including:
 - Primary cancer type
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<h2 name="roadmap"> 🚙 Project Roadmap </h2>
+<h2><a name="roadmap"></a> 🚙 Project Roadmap </h2>
 <img src="Images/roadmap.png" width="1000" height="600">
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<h2 name="learnings"> 💡 Learnings </h2>
+<h2><a name="learnings"></a> 💡 Learnings </h2>
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
