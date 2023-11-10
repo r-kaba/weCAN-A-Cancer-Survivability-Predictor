@@ -4,7 +4,7 @@
 
   # 🧬 weCAN: A Cancer Survivability Predictor 🧬
 ### Machine Learning and Cancer Survivability
-<img src="Images/weCAN.jpg" alt="Logo" width="600" height="400">
+<img src="Images/weCAN.jpg" alt="Logo" width="600" height="600">
   </a>
 
 
