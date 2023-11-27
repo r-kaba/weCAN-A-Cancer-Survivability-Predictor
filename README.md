@@ -14,6 +14,10 @@
 
 This project utilizes Machine Learning techniques to attempt to increase the accuracy of estimating cancer prognosis and survivability using demographic features as well as disease status, progression and genetic.  If successful, it will  aid in the improvement of the quality of life for patients and their loved ones. 
 
+This project will attempt to find a solution to the following:
+
+"How can we use Machine Leaning to increase the precision of prognostic estimates for cancer patients?"
+
 ## 📖 Table of Contents
   
   <ol>
@@ -22,6 +26,8 @@ This project utilizes Machine Learning techniques to attempt to increase the acc
     <li><a href="#dict">Data Dictionary</a></li>
     <li><a href="#roadmap">Project Roadmap</a></li>
     <li><a href="#learnings">Learnings</a></li>
+    <li><a href="#conclusions">Conclusions</a></li>
+    <li><a href="#next">Next Steps</a></li>
   </ol>
 </details>
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -286,22 +292,29 @@ Project progression:
 Thus far I have completed the `Data Collection`, the preliminary `Data Cleaning` and the initial `EDA`.  
 I have preformed my first iterations of feature selection and engineering.
 I have perfomred my first iterations of the baseline ML models. I have determined this will be a classification problem, classifying patients into 1 of 4 survival duration categories:
-- < 1 year
-- 1-2 years
-- 2-4 years
-- > 4 yeas
+- < 1 year: very poor prognosis
+- =1 and < 2 years: poor prognosis
+- = 2 and <4 years: intermediate prognosis
+- >= 4 years: good prognosis
+
+Given the constraints of my data, the above groupings is what I had to work with to have the best data distrbution.  Ideally, I would want to have a wider data set so I could group surival as per industry standards. Given what I have to work with. this was the best I could do. For future modelling, I would like to collect data that has a much higher variance of survival.
 
 I have fit baseline models for:
 - Multiclass Logistic Regression
+- SVM-OvA
+- SVM-OvO
 - K Nearest Neighbors
 - Decision Tree Classifier
 - Random Forest Classifier
   
-My next steps will be:
-- Iterate over feature selection and engineering to transform feature space to get more predictive power from my models.
-- Optimize hyperparameters for the best performing model(s).
-- Test out Neural Networks.
-- Implement model.
+Based on Accuracy, F1 and AUC under the ROC plot, I determined my best baseline models were:
+- Logistic Regression
+- XGBoost
+These 2 models performed similarily in the baseline modeling, and have good power to distinguish class 1(very poor prognosis) and class 4 (good prognosis) from the other classes. Next they have adequate power to distinguish class 3 and perform the most poor on class 2. This is ok and expected. We want the best power to get True Positives for class 1 and class 4 as these will impact the patientes quality of life the most.
+
+The next step I performed was to optimize the Logistic Regression and XGBoost models using Kfold Cross Validation. I found the best model to be: Logistic Regression Classifier. This performed the best a predicting patients that were in the very poor prognosis category and the good prognosis category which can be the hardest to predict and the most important.
+
+
 
 Stay tuned for updates! 
 
@@ -313,4 +326,30 @@ Some learnings from the EDA and Feature Engineering (AHA! moments):
 - Originally trying to perform regression modelling, realized this does not work as a regression model but needs to be a classification model.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<h2 id="conclusions"> 🎬 Conclusions </h2>
+In conclusion, I was able to create a machine learning model that helps to solve the problem:
+"How can we use Machine Leaning to increase the precision of prognostic estimates for cancer patients?"
 
+The model did well in predictiing patients with Very Poor and Good prognosis as compared to categories. Features such as Age, Metastatic Status, Metastatic Progression(number of metastases and number of metastatic sites), ... contribute the most to predicting prognosis category as defined above. 
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<h2 id="next"> ⏭️ Next Steps </h2>
+
+The Model trained had adequate predictive power, however next steps from here include:
+- Designing a neural network (from scratch or using transfer learning) to get even more powerful predictions.
+- Collecting more patient data and further engineering my feature space for more predictive power.
+- Gathering a wider feature space to have more variance in the features present.
+- Ideally including more descriptive features that could aid in predicitve power. 
+
+Features I believe would help create an even better model are:
+  - Tumor size
+  - Metastases size
+  - Specific mutated genes (there are a variety of genes that can be mutated that indicate prognosis status)
+  - Treatment (what treatment the patient is on can drastically change their prognosis)
+  - Tumor excision status: was the primary or metastatic tumors excised fully, partially, not at all? - if the tumor has been removed, this can change the patients prognosis.
+
+Moving forward, I would like to continue to work on this project and make the model perform even better and maybe integrate more features and more patient data. I will also attempt to create a streamlit app and a dashboard to display my project and results thus far.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
