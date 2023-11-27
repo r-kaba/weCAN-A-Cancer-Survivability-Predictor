@@ -1,0 +1,56 @@
+Column,Description
+Study ID,ID for the Study where the data is from
+Patient ID,Unique patient identifier
+Sample ID,Unique sample identifier
+Age at Death,Age at which patient died (blank indicated patient is alive at time of study)
+Age at First Mets Dx,Age at which patient was diagnosed with metastatic cancer
+Age at Last Contact,Age at which the study made last contact with the patient
+Age at Sequencing,Age at which the patients tumour was genetically sequenced
+Age at Surgical Procedure,Age at which patentee underwent surgery to remove tumour
+Cancer Type,Type of cancer at diagnosis
+Cancer Type Detailed,Detailed description of cancer type
+Distant Mets: Adrenal Gland,Presence or absence of distant Metastasis at Diagnosis in the Adrenal Gland
+Distant Mets: Biliary tract,Presence or absence of distant Metastasis at Diagnosis in the Binary tract
+Distant Mets: Bladder/UT,Presence or absence of distant Metastasis at Diagnosis in the Bladder/Urinary Tract 
+Distant Mets: Bone,Presence or absence of distant Metastasis at Diagnosis in Bone 
+Distant Mets: Bowel,Presence or absence of distant Metastasis at Diagnosis in the Bowel
+Distant Mets: Breast,Presence or absence of distant Metastasis at Diagnosis in the Breast tissue
+Distant Mets: CNS/Brain,Presence or absence of distant Metastasis at Diagnosis in the Central Nervous System(spinal cord)/Brain
+Distant Mets: Distant LN,Presence or absence of distant Metastasis at Diagnosis in distant Lymph Nodes
+Distant Mets: Female Genital,Presence or absence of distant Metastasis at Diagnosis in female genitalia
+Distant Mets: Head and Neck,Presence or absence of distant Metastasis at Diagnosis in the head or neck
+Distant Mets: Intra-Abdominal,Presence or absence of distant Metastasis at Diagnosis in the intra abdominal area
+Distant Mets: Kidney,Presence or absence of distant Metastasis at Diagnosis in the kidneys
+Distant Mets: Liver,Presence or absence of distant Metastasis at Diagnosis in the liver
+Distant Mets: Lung,Presence or absence of distant Metastasis at Diagnosis in the lungs
+Distant Mets: Male Genital,Presence or absence of distant Metastasis at Diagnosis in the male genitalia
+Distant Mets: Mediastinum,Presence or absence of distant Metastasis at Diagnosis in the mediastinum
+Distant Mets: Ovary,Presence or absence of distant Metastasis at Diagnosis in the ovaries
+Distant Mets: Pleura,Presence or absence of distant Metastasis at Diagnosis in pleural tissue
+Distant Mets: PNS,Presence or absence of distant Metastasis at Diagnosis in the peripheral nervous system
+Distant Mets: Skin,Presence or absence of distant Metastasis at Diagnosis in the skin 
+Distant Mets: Unspecified,Presence or absence of distant Metastasis at Diagnosis in unspecified regions
+FGA,Fraction Genome Altered (rounded)
+Fraction Genome Altered,Fraction Genome Altered indicates the fraction of the genome that is copy-number altered. Add the length of all copy-number segments with an absolute value greater than 0.1 and then divide that number by the length of the genome. The resulting number is a fraction.
+Gene Panel,ID of the gene panel used for genetic sequencing
+Metastatic patient,True or False: if patient had metastatic disease or not
+Metastatic Site,The anatomic location where tumour has spread
+Met Count,Number of metastasis found
+Met Site Count,Number of different metastatic sites
+MSI Score,Numerical value of the amount of Microsatellite Instability found in the tumour
+MSI Type,Does tutor exhibit Microsatellite Instability
+Mutation Count,Number of gene mutations found
+Oncotree Code,The OncoTree is an open-source ontology that was developed at Memorial Sloan Kettering Cancer Center (MSK) for standardizing cancer type diagnosis from a clinical perspective by assigning each diagnosis a unique OncoTree code.
+Organ System,Organ System where the cancer was found
+Overall Survival (Months),Number of months that patient survived from initial diagnosis
+Overall Survival Status,"Survival status: 0:LIVING, 1:DECEASED"
+Primary Tumor Site,The organ sub-division where the primary tumour was found
+Race Category,Patient information about race
+Number of Samples Per Patient,Number of samples taken per patient in the study
+Sample coverage,The number of unique sequencing reads that align to a region in a reference genome
+Sample Type,Primary tumour or metastasis
+Sex,Biological gender at birth
+Subtype,Cancer subtype
+Subtype Abbreviation,Cancer subtype abbreviation
+TMB (nonsynonymous),The number of non-synonymous mutations within coding regions across the genome. Non-synonymous mutations alter coding regions and change the resulting protein into dysfunctional or malformed protein products.
+Tumor Purity,The proportion of tumour cells in the tumour micro environment (TME)
